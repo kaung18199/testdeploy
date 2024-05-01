@@ -30,13 +30,16 @@ const Whatwedo = () => {
             </p>
           </div>
           <div className="  pt-4 pb-3 space-y-4">
-            <div className=" bg-white space-y-4 border-l shadow-md rounded-xl p-4 border-red-600 flex justify-start items-center gap-4">
-              <Image
-                src="https://themesfamily.com/wt/kabir/assets/img/feature/003-multimedia.png"
-                alt="image"
-                width={100}
-                height={100}
-              />
+            <div className=" bg-white space-y-4 border-l shadow-md rounded-xl p-4 border-red-600 flex justify-start items-start gap-4">
+              <div className=" w-[40%] sm:w-[30%] md:w-[20%] pt-3">
+                <Image
+                  src="https://themesfamily.com/wt/kabir/assets/img/feature/003-multimedia.png"
+                  alt="image"
+                  width={100}
+                  height={100}
+                  className=" w-full h-full object-cover object-center"
+                />
+              </div>
               <div className="space-y-4">
                 <p className=" text-lg font-semibold">Best Time Management</p>
                 <p>
@@ -46,12 +49,16 @@ const Whatwedo = () => {
               </div>
             </div>
             <div className=" bg-white space-y-4 border-l shadow-md rounded-xl p-4 border-red-600 flex justify-start items-center gap-4">
-              <Image
-                src="https://themesfamily.com/wt/kabir/assets/img/feature/002-academic-cap.png"
-                alt="image"
-                width={100}
-                height={100}
-              />
+              <div className=" w-[40%] sm:w-[30%] md:w-[20%] pt-3">
+                <Image
+                  src="https://themesfamily.com/wt/kabir/assets/img/feature/002-academic-cap.png"
+                  alt="image"
+                  width={100}
+                  height={100}
+                  className=" w-full h-full object-cover object-center"
+                />
+              </div>
+
               <div className="space-y-4">
                 <p className=" text-lg font-semibold">Secure & Trust</p>
                 <p>

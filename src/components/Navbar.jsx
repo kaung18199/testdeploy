@@ -57,22 +57,29 @@ const Navbar = ({ isScrolled }) => {
             alt="menu"
           />
         ) : (
-          <Image
-            src="/menu-3-svgrepo-com.svg"
-            width={30}
-            height={30}
-            alt="menu"
-          />
+          // <Image
+          //   src="/menu-3-svgrepo-com.svg"
+          //   width={30}
+          //   height={30}
+          //   alt="menu"
+          // />
+          ""
         )}
       </div>
       {show && (
         <div
           className={` block md:hidden absolute top-[94px] space-y-6 rounded-b-3xl shadow-lg border-b-4 border-red-600  animate-fade-in py-6 text-center ${
-            isScrolled ? "bg-white" : "bg-gray-900"
+            isScrolled ? "bg-white" : " hidden"
           } w-full left-0`}
         >
           {links.map((link, index) => (
-            <div key={index} className=" ">
+            <div
+              key={index}
+              className=" "
+              onClick={() => {
+                showFunction();
+              }}
+            >
               <NavLink isScrolled={isScrolled} item={link} key={index} />
             </div>
           ))}
